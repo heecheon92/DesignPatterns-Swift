@@ -12,11 +12,14 @@ struct NodeView<T>: View {
     var node: Node<T>
     
     var body: some View {
-        VStack {
+        VStack(spacing: 0) {
+            Text("\(String(describing: node.name))")
+                .padding(.vertical)
             Text("\(String(describing: node.value))")
-                .padding()
-                .border(Color.white)
         }
+        .padding()
+        .background(Color.white)
+        .border(Color.black)
     }
 }
 

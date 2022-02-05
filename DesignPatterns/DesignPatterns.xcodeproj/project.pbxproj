@@ -27,6 +27,8 @@
 		4BBB183B27ADFCE800914D47 /* NodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBB183927ADFCE800914D47 /* NodeView.swift */; };
 		4BBB183D27AE140400914D47 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4BBB183C27AE140400914D47 /* README.md */; };
 		4BBB183E27AE140400914D47 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4BBB183C27AE140400914D47 /* README.md */; };
+		4BBB184127AE249000914D47 /* CollectDict.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBB184027AE249000914D47 /* CollectDict.swift */; };
+		4BBB184427AE24D100914D47 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBB184327AE24D100914D47 /* Line.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		4BBB183627ADF4A000914D47 /* TreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeView.swift; sourceTree = "<group>"; };
 		4BBB183927ADFCE800914D47 /* NodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeView.swift; sourceTree = "<group>"; };
 		4BBB183C27AE140400914D47 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		4BBB184027AE249000914D47 /* CollectDict.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectDict.swift; sourceTree = "<group>"; };
+		4BBB184327AE24D100914D47 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,8 @@
 		4BBB17ED27ADEFD400914D47 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				4BBB184227AE24C700914D47 /* Shape */,
+				4BBB183F27AE247C00914D47 /* PreferenceKeys */,
 				4BBB183527ADF48300914D47 /* Diagram */,
 				4BBB183127ADF37800914D47 /* ADT */,
 				4BBB182A27ADEFF900914D47 /* DesignPatterns */,
@@ -207,6 +213,22 @@
 				4BBB183927ADFCE800914D47 /* NodeView.swift */,
 			);
 			path = Diagram;
+			sourceTree = "<group>";
+		};
+		4BBB183F27AE247C00914D47 /* PreferenceKeys */ = {
+			isa = PBXGroup;
+			children = (
+				4BBB184027AE249000914D47 /* CollectDict.swift */,
+			);
+			path = PreferenceKeys;
+			sourceTree = "<group>";
+		};
+		4BBB184227AE24C700914D47 /* Shape */ = {
+			isa = PBXGroup;
+			children = (
+				4BBB184327AE24D100914D47 /* Line.swift */,
+			);
+			path = Shape;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,10 +391,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BBB184127AE249000914D47 /* CollectDict.swift in Sources */,
 				4BBB182C27ADF01D00914D47 /* IDesignPattern.swift in Sources */,
 				4BBB183327ADF38B00914D47 /* Tree.swift in Sources */,
 				4BBB183A27ADFCE800914D47 /* NodeView.swift in Sources */,
 				4BBB181827ADEFD600914D47 /* ContentView.swift in Sources */,
+				4BBB184427AE24D100914D47 /* Line.swift in Sources */,
 				4BBB181627ADEFD600914D47 /* DesignPatternsApp.swift in Sources */,
 				4BBB183727ADF4A000914D47 /* TreeView.swift in Sources */,
 			);

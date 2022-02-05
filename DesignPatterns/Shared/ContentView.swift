@@ -9,14 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var tree = Tree<Int>(50, children: [
-        Tree(17, children: [
-            Tree(12),
-            Tree(23)
+    @State var tree = Tree<Int>(name: "root", value: 50, children: [
+        Tree(name: "child", value: 17, children: [
+            Tree(name: "leaf", value: 12),
+            Tree(name: "leaf", value: 23)
         ]),
-        Tree(72, children: [
-            Tree(54),
-            Tree(72)
+        Tree(name: "child", value: 72, children: [
+            Tree(name: "leaf", value: 54),
+            Tree(name: "leaf", value: 72)
         ])
     ]).map(transform: Node.init)
     
