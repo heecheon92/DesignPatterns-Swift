@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B5A3FA727B00282006FFF2D /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5A3FA627B00282006FFF2D /* CodeView.swift */; };
+		4B5A3FA827B00282006FFF2D /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5A3FA627B00282006FFF2D /* CodeView.swift */; };
+		4B5A3FAB27B002C3006FFF2D /* CodeViewer in Frameworks */ = {isa = PBXBuildFile; productRef = 4B5A3FAA27B002C3006FFF2D /* CodeViewer */; };
 		4BBB180727ADEFD600914D47 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBB180627ADEFD600914D47 /* Tests_iOS.swift */; };
 		4BBB180927ADEFD600914D47 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBB180827ADEFD600914D47 /* Tests_iOSLaunchTests.swift */; };
 		4BBB181327ADEFD600914D47 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBB181227ADEFD600914D47 /* Tests_macOS.swift */; };
@@ -49,6 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B5A3FA427B00238006FFF2D /* CodeViewer */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CodeViewer; sourceTree = "<group>"; };
+		4B5A3FA627B00282006FFF2D /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
 		4BBB17EE27ADEFD400914D47 /* DesignPatternsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignPatternsApp.swift; sourceTree = "<group>"; };
 		4BBB17EF27ADEFD400914D47 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4BBB17F027ADEFD600914D47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -75,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B5A3FAB27B002C3006FFF2D /* CodeViewer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,21 +108,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B5A3FA327B00238006FFF2D /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				4B5A3FA427B00238006FFF2D /* CodeViewer */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		4B5A3FA527B00271006FFF2D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4B5A3FA627B00282006FFF2D /* CodeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4B5A3FA927B002C3006FFF2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4BBB17E827ADEFD400914D47 = {
 			isa = PBXGroup;
 			children = (
+				4B5A3FA327B00238006FFF2D /* Packages */,
 				4BBB183C27AE140400914D47 /* README.md */,
 				4BBB17ED27ADEFD400914D47 /* Shared */,
 				4BBB17FC27ADEFD600914D47 /* macOS */,
 				4BBB180527ADEFD600914D47 /* Tests iOS */,
 				4BBB181127ADEFD600914D47 /* Tests macOS */,
 				4BBB17F627ADEFD600914D47 /* Products */,
+				4B5A3FA927B002C3006FFF2D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		4BBB17ED27ADEFD400914D47 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				4B5A3FA527B00271006FFF2D /* View */,
 				4BBB184227AE24C700914D47 /* Shape */,
 				4BBB183F27AE247C00914D47 /* PreferenceKeys */,
 				4BBB183527ADF48300914D47 /* Diagram */,
@@ -247,6 +279,9 @@
 			dependencies = (
 			);
 			name = "DesignPatterns (iOS)";
+			packageProductDependencies = (
+				4B5A3FAA27B002C3006FFF2D /* CodeViewer */,
+			);
 			productName = "DesignPatterns (iOS)";
 			productReference = 4BBB17F527ADEFD600914D47 /* DesignPatterns.app */;
 			productType = "com.apple.product-type.application";
@@ -391,6 +426,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B5A3FA727B00282006FFF2D /* CodeView.swift in Sources */,
 				4BBB184127AE249000914D47 /* CollectDict.swift in Sources */,
 				4BBB182C27ADF01D00914D47 /* IDesignPattern.swift in Sources */,
 				4BBB183327ADF38B00914D47 /* Tree.swift in Sources */,
@@ -412,6 +448,7 @@
 				4BBB181927ADEFD600914D47 /* ContentView.swift in Sources */,
 				4BBB181727ADEFD600914D47 /* DesignPatternsApp.swift in Sources */,
 				4BBB183827ADF4A000914D47 /* TreeView.swift in Sources */,
+				4B5A3FA827B00282006FFF2D /* CodeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -805,6 +842,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4B5A3FAA27B002C3006FFF2D /* CodeViewer */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CodeViewer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4BBB17E927ADEFD400914D47 /* Project object */;
 }

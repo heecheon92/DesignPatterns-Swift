@@ -21,12 +21,15 @@ struct ContentView: View {
     ]).map(transform: Node.init)
     
     var body: some View {
-        TreeView(tree: tree, node: { node in
-            NodeView<Int>(node: node)
-                .onAppear {
-                    print("\(type(of: node.self))")
-                }
-        })
+//        TreeView(tree: tree, node: { node in
+//            NodeView<Int>(node: node)
+//                .onAppear {
+//                    print("\(type(of: node.self))")
+//                }
+//        })
+//
+        CodeView()
+            .frame(height: UIScreen.main.bounds.height * 0.4)
     }
 }
 
