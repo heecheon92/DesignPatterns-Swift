@@ -14,5 +14,6 @@ struct DesignPatternsApp: App {
             ContentView()
                 .preferredColorScheme(.light)
         }
+        
     }
 }

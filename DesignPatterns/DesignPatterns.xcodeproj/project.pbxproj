@@ -43,6 +43,14 @@
 		4BD6EB5C27B9DF0C00F0E6D0 /* SizePreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6EB5A27B9DF0C00F0E6D0 /* SizePreferenceKey.swift */; };
 		4BD6EB5F27B9E78F00F0E6D0 /* WikipediaKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4BD6EB5E27B9E78F00F0E6D0 /* WikipediaKit */; };
 		4BD6EB6227B9E82200F0E6D0 /* CodeViewer in Frameworks */ = {isa = PBXBuildFile; productRef = 4BD6EB6127B9E82200F0E6D0 /* CodeViewer */; };
+		4BD6EB6527BA118C00F0E6D0 /* eDesignPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6EB6427BA118C00F0E6D0 /* eDesignPattern.swift */; };
+		4BD6EB6627BA118C00F0E6D0 /* eDesignPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6EB6427BA118C00F0E6D0 /* eDesignPattern.swift */; };
+		4BD6EB6927BA137C00F0E6D0 /* MainNavigationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6EB6827BA137C00F0E6D0 /* MainNavigationCell.swift */; };
+		4BD6EB6A27BA137C00F0E6D0 /* MainNavigationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6EB6827BA137C00F0E6D0 /* MainNavigationCell.swift */; };
+		4BD6EB6D27BA175000F0E6D0 /* InitialDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6EB6C27BA175000F0E6D0 /* InitialDataFetcher.swift */; };
+		4BD6EB6E27BA175000F0E6D0 /* InitialDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6EB6C27BA175000F0E6D0 /* InitialDataFetcher.swift */; };
+		4BD6EB7027BA22F600F0E6D0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6EB6F27BA22F600F0E6D0 /* MainView.swift */; };
+		4BD6EB7127BA22F600F0E6D0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6EB6F27BA22F600F0E6D0 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +96,10 @@
 		4BD6EB5427B9DC5C00F0E6D0 /* BehavioralPatternsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BehavioralPatternsView.swift; sourceTree = "<group>"; };
 		4BD6EB5727B9DC6900F0E6D0 /* CreationalPatternsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationalPatternsView.swift; sourceTree = "<group>"; };
 		4BD6EB5A27B9DF0C00F0E6D0 /* SizePreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizePreferenceKey.swift; sourceTree = "<group>"; };
+		4BD6EB6427BA118C00F0E6D0 /* eDesignPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eDesignPattern.swift; sourceTree = "<group>"; };
+		4BD6EB6827BA137C00F0E6D0 /* MainNavigationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationCell.swift; sourceTree = "<group>"; };
+		4BD6EB6C27BA175000F0E6D0 /* InitialDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialDataFetcher.swift; sourceTree = "<group>"; };
+		4BD6EB6F27BA22F600F0E6D0 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,10 +140,12 @@
 		4B5A3FA527B00271006FFF2D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4BD6EB6727BA136B00F0E6D0 /* Cell */,
 				4B5A3FA627B00282006FFF2D /* CodeView.swift */,
 				4BD6EB5127B9DC3A00F0E6D0 /* StructuralPatternsView.swift */,
 				4BD6EB5427B9DC5C00F0E6D0 /* BehavioralPatternsView.swift */,
 				4BD6EB5727B9DC6900F0E6D0 /* CreationalPatternsView.swift */,
+				4BD6EB6F27BA22F600F0E6D0 /* MainView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -159,6 +173,8 @@
 		4BBB17ED27ADEFD400914D47 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				4BD6EB6B27BA173B00F0E6D0 /* ViewModel */,
+				4BD6EB6327BA117A00F0E6D0 /* Enum */,
 				4BD6EB4E27B9D7FC00F0E6D0 /* CommonExtension */,
 				4B5A3FA527B00271006FFF2D /* View */,
 				4BBB184227AE24C700914D47 /* Shape */,
@@ -282,6 +298,30 @@
 				4BD6EB4F27B9D82500F0E6D0 /* CommonExtension.swift */,
 			);
 			path = CommonExtension;
+			sourceTree = "<group>";
+		};
+		4BD6EB6327BA117A00F0E6D0 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				4BD6EB6427BA118C00F0E6D0 /* eDesignPattern.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		4BD6EB6727BA136B00F0E6D0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4BD6EB6827BA137C00F0E6D0 /* MainNavigationCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		4BD6EB6B27BA173B00F0E6D0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4BD6EB6C27BA175000F0E6D0 /* InitialDataFetcher.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -454,14 +494,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BD6EB5827B9DC6900F0E6D0 /* CreationalPatternsView.swift in Sources */,
+				4BD6EB7027BA22F600F0E6D0 /* MainView.swift in Sources */,
 				4BD6EB5027B9D82500F0E6D0 /* CommonExtension.swift in Sources */,
+				4BD6EB6527BA118C00F0E6D0 /* eDesignPattern.swift in Sources */,
 				4B5A3FA727B00282006FFF2D /* CodeView.swift in Sources */,
 				4BBB184127AE249000914D47 /* CollectDict.swift in Sources */,
 				4BBB182C27ADF01D00914D47 /* IDesignPattern.swift in Sources */,
 				4BD6EB5527B9DC5C00F0E6D0 /* BehavioralPatternsView.swift in Sources */,
 				4BBB183327ADF38B00914D47 /* Tree.swift in Sources */,
+				4BD6EB6927BA137C00F0E6D0 /* MainNavigationCell.swift in Sources */,
 				4BD6EB5B27B9DF0C00F0E6D0 /* SizePreferenceKey.swift in Sources */,
 				4BBB183A27ADFCE800914D47 /* NodeView.swift in Sources */,
+				4BD6EB6D27BA175000F0E6D0 /* InitialDataFetcher.swift in Sources */,
 				4BD6EB5227B9DC3A00F0E6D0 /* StructuralPatternsView.swift in Sources */,
 				4BBB181827ADEFD600914D47 /* ContentView.swift in Sources */,
 				4BBB184427AE24D100914D47 /* Line.swift in Sources */,
@@ -478,12 +522,16 @@
 				4BD6EB5627B9DC5C00F0E6D0 /* BehavioralPatternsView.swift in Sources */,
 				4BBB183427ADF38B00914D47 /* Tree.swift in Sources */,
 				4BBB183B27ADFCE800914D47 /* NodeView.swift in Sources */,
+				4BD6EB6A27BA137C00F0E6D0 /* MainNavigationCell.swift in Sources */,
 				4BD6EB5C27B9DF0C00F0E6D0 /* SizePreferenceKey.swift in Sources */,
 				4BBB181927ADEFD600914D47 /* ContentView.swift in Sources */,
 				4BD6EB5327B9DC3A00F0E6D0 /* StructuralPatternsView.swift in Sources */,
 				4BBB181727ADEFD600914D47 /* DesignPatternsApp.swift in Sources */,
+				4BD6EB6E27BA175000F0E6D0 /* InitialDataFetcher.swift in Sources */,
+				4BD6EB6627BA118C00F0E6D0 /* eDesignPattern.swift in Sources */,
 				4BBB183827ADF4A000914D47 /* TreeView.swift in Sources */,
 				4B5A3FA827B00282006FFF2D /* CodeView.swift in Sources */,
+				4BD6EB7127BA22F600F0E6D0 /* MainView.swift in Sources */,
 				4BD6EB5927B9DC6900F0E6D0 /* CreationalPatternsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
