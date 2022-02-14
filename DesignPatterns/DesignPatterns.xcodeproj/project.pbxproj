@@ -32,6 +32,17 @@
 		4BBB183E27AE140400914D47 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4BBB183C27AE140400914D47 /* README.md */; };
 		4BBB184127AE249000914D47 /* CollectDict.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBB184027AE249000914D47 /* CollectDict.swift */; };
 		4BBB184427AE24D100914D47 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBB184327AE24D100914D47 /* Line.swift */; };
+		4BD6EB5027B9D82500F0E6D0 /* CommonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6EB4F27B9D82500F0E6D0 /* CommonExtension.swift */; };
+		4BD6EB5227B9DC3A00F0E6D0 /* StructuralPatternsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6EB5127B9DC3A00F0E6D0 /* StructuralPatternsView.swift */; };
+		4BD6EB5327B9DC3A00F0E6D0 /* StructuralPatternsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6EB5127B9DC3A00F0E6D0 /* StructuralPatternsView.swift */; };
+		4BD6EB5527B9DC5C00F0E6D0 /* BehavioralPatternsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6EB5427B9DC5C00F0E6D0 /* BehavioralPatternsView.swift */; };
+		4BD6EB5627B9DC5C00F0E6D0 /* BehavioralPatternsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6EB5427B9DC5C00F0E6D0 /* BehavioralPatternsView.swift */; };
+		4BD6EB5827B9DC6900F0E6D0 /* CreationalPatternsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6EB5727B9DC6900F0E6D0 /* CreationalPatternsView.swift */; };
+		4BD6EB5927B9DC6900F0E6D0 /* CreationalPatternsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6EB5727B9DC6900F0E6D0 /* CreationalPatternsView.swift */; };
+		4BD6EB5B27B9DF0C00F0E6D0 /* SizePreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6EB5A27B9DF0C00F0E6D0 /* SizePreferenceKey.swift */; };
+		4BD6EB5C27B9DF0C00F0E6D0 /* SizePreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6EB5A27B9DF0C00F0E6D0 /* SizePreferenceKey.swift */; };
+		4BD6EB5F27B9E78F00F0E6D0 /* WikipediaKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4BD6EB5E27B9E78F00F0E6D0 /* WikipediaKit */; };
+		4BD6EB6227B9E82200F0E6D0 /* CodeViewer in Frameworks */ = {isa = PBXBuildFile; productRef = 4BD6EB6127B9E82200F0E6D0 /* CodeViewer */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +63,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4B5A3FA427B00238006FFF2D /* CodeViewer */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CodeViewer; sourceTree = "<group>"; };
 		4B5A3FA627B00282006FFF2D /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
 		4BBB17EE27ADEFD400914D47 /* DesignPatternsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignPatternsApp.swift; sourceTree = "<group>"; };
 		4BBB17EF27ADEFD400914D47 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +83,11 @@
 		4BBB183C27AE140400914D47 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		4BBB184027AE249000914D47 /* CollectDict.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectDict.swift; sourceTree = "<group>"; };
 		4BBB184327AE24D100914D47 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		4BD6EB4F27B9D82500F0E6D0 /* CommonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonExtension.swift; sourceTree = "<group>"; };
+		4BD6EB5127B9DC3A00F0E6D0 /* StructuralPatternsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructuralPatternsView.swift; sourceTree = "<group>"; };
+		4BD6EB5427B9DC5C00F0E6D0 /* BehavioralPatternsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BehavioralPatternsView.swift; sourceTree = "<group>"; };
+		4BD6EB5727B9DC6900F0E6D0 /* CreationalPatternsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationalPatternsView.swift; sourceTree = "<group>"; };
+		4BD6EB5A27B9DF0C00F0E6D0 /* SizePreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizePreferenceKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +96,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B5A3FAB27B002C3006FFF2D /* CodeViewer in Frameworks */,
+				4BD6EB5F27B9E78F00F0E6D0 /* WikipediaKit in Frameworks */,
+				4BD6EB6227B9E82200F0E6D0 /* CodeViewer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,18 +125,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4B5A3FA327B00238006FFF2D /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				4B5A3FA427B00238006FFF2D /* CodeViewer */,
-			);
-			name = Packages;
-			sourceTree = "<group>";
-		};
 		4B5A3FA527B00271006FFF2D /* View */ = {
 			isa = PBXGroup;
 			children = (
 				4B5A3FA627B00282006FFF2D /* CodeView.swift */,
+				4BD6EB5127B9DC3A00F0E6D0 /* StructuralPatternsView.swift */,
+				4BD6EB5427B9DC5C00F0E6D0 /* BehavioralPatternsView.swift */,
+				4BD6EB5727B9DC6900F0E6D0 /* CreationalPatternsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -134,7 +146,6 @@
 		4BBB17E827ADEFD400914D47 = {
 			isa = PBXGroup;
 			children = (
-				4B5A3FA327B00238006FFF2D /* Packages */,
 				4BBB183C27AE140400914D47 /* README.md */,
 				4BBB17ED27ADEFD400914D47 /* Shared */,
 				4BBB17FC27ADEFD600914D47 /* macOS */,
@@ -148,6 +159,7 @@
 		4BBB17ED27ADEFD400914D47 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				4BD6EB4E27B9D7FC00F0E6D0 /* CommonExtension */,
 				4B5A3FA527B00271006FFF2D /* View */,
 				4BBB184227AE24C700914D47 /* Shape */,
 				4BBB183F27AE247C00914D47 /* PreferenceKeys */,
@@ -251,6 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				4BBB184027AE249000914D47 /* CollectDict.swift */,
+				4BD6EB5A27B9DF0C00F0E6D0 /* SizePreferenceKey.swift */,
 			);
 			path = PreferenceKeys;
 			sourceTree = "<group>";
@@ -261,6 +274,14 @@
 				4BBB184327AE24D100914D47 /* Line.swift */,
 			);
 			path = Shape;
+			sourceTree = "<group>";
+		};
+		4BD6EB4E27B9D7FC00F0E6D0 /* CommonExtension */ = {
+			isa = PBXGroup;
+			children = (
+				4BD6EB4F27B9D82500F0E6D0 /* CommonExtension.swift */,
+			);
+			path = CommonExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,6 +302,8 @@
 			name = "DesignPatterns (iOS)";
 			packageProductDependencies = (
 				4B5A3FAA27B002C3006FFF2D /* CodeViewer */,
+				4BD6EB5E27B9E78F00F0E6D0 /* WikipediaKit */,
+				4BD6EB6127B9E82200F0E6D0 /* CodeViewer */,
 			);
 			productName = "DesignPatterns (iOS)";
 			productReference = 4BBB17F527ADEFD600914D47 /* DesignPatterns.app */;
@@ -374,6 +397,10 @@
 				Base,
 			);
 			mainGroup = 4BBB17E827ADEFD400914D47;
+			packageReferences = (
+				4BD6EB5D27B9E78F00F0E6D0 /* XCRemoteSwiftPackageReference "WikipediaKit" */,
+				4BD6EB6027B9E82200F0E6D0 /* XCRemoteSwiftPackageReference "CodeViewer" */,
+			);
 			productRefGroup = 4BBB17F627ADEFD600914D47 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -426,11 +453,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BD6EB5827B9DC6900F0E6D0 /* CreationalPatternsView.swift in Sources */,
+				4BD6EB5027B9D82500F0E6D0 /* CommonExtension.swift in Sources */,
 				4B5A3FA727B00282006FFF2D /* CodeView.swift in Sources */,
 				4BBB184127AE249000914D47 /* CollectDict.swift in Sources */,
 				4BBB182C27ADF01D00914D47 /* IDesignPattern.swift in Sources */,
+				4BD6EB5527B9DC5C00F0E6D0 /* BehavioralPatternsView.swift in Sources */,
 				4BBB183327ADF38B00914D47 /* Tree.swift in Sources */,
+				4BD6EB5B27B9DF0C00F0E6D0 /* SizePreferenceKey.swift in Sources */,
 				4BBB183A27ADFCE800914D47 /* NodeView.swift in Sources */,
+				4BD6EB5227B9DC3A00F0E6D0 /* StructuralPatternsView.swift in Sources */,
 				4BBB181827ADEFD600914D47 /* ContentView.swift in Sources */,
 				4BBB184427AE24D100914D47 /* Line.swift in Sources */,
 				4BBB181627ADEFD600914D47 /* DesignPatternsApp.swift in Sources */,
@@ -443,12 +475,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BBB182D27ADF01D00914D47 /* IDesignPattern.swift in Sources */,
+				4BD6EB5627B9DC5C00F0E6D0 /* BehavioralPatternsView.swift in Sources */,
 				4BBB183427ADF38B00914D47 /* Tree.swift in Sources */,
 				4BBB183B27ADFCE800914D47 /* NodeView.swift in Sources */,
+				4BD6EB5C27B9DF0C00F0E6D0 /* SizePreferenceKey.swift in Sources */,
 				4BBB181927ADEFD600914D47 /* ContentView.swift in Sources */,
+				4BD6EB5327B9DC3A00F0E6D0 /* StructuralPatternsView.swift in Sources */,
 				4BBB181727ADEFD600914D47 /* DesignPatternsApp.swift in Sources */,
 				4BBB183827ADF4A000914D47 /* TreeView.swift in Sources */,
 				4B5A3FA827B00282006FFF2D /* CodeView.swift in Sources */,
+				4BD6EB5927B9DC6900F0E6D0 /* CreationalPatternsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -843,9 +879,38 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		4BD6EB5D27B9E78F00F0E6D0 /* XCRemoteSwiftPackageReference "WikipediaKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Raureif/WikipediaKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		4BD6EB6027B9E82200F0E6D0 /* XCRemoteSwiftPackageReference "CodeViewer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dwarvesf/CodeViewer";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		4B5A3FAA27B002C3006FFF2D /* CodeViewer */ = {
 			isa = XCSwiftPackageProductDependency;
+			productName = CodeViewer;
+		};
+		4BD6EB5E27B9E78F00F0E6D0 /* WikipediaKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BD6EB5D27B9E78F00F0E6D0 /* XCRemoteSwiftPackageReference "WikipediaKit" */;
+			productName = WikipediaKit;
+		};
+		4BD6EB6127B9E82200F0E6D0 /* CodeViewer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BD6EB6027B9E82200F0E6D0 /* XCRemoteSwiftPackageReference "CodeViewer" */;
 			productName = CodeViewer;
 		};
 /* End XCSwiftPackageProductDependency section */
