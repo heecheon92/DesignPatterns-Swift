@@ -7,9 +7,26 @@
 
 import SwiftUI
 
-struct CreationalPatternsView: View {
+struct CreationalPatternsView: PatternView {
+    
+    typealias Pattern = AnyCreationalPattern
+    
+    var viewList: Array<Pattern> = [
+        Pattern(_AbstractFactory()),
+        Pattern(_Builder()),
+        Pattern(_FactoryMethod()),
+        Pattern(_Prototype()),
+        Pattern(_Singleton())
+    ]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List(viewList) { cr in
+            ListingCell(pattern: cr)
+        }
+    }
+    
+    func ListingCell(pattern: AnyCreationalPattern) -> some View {
+        return Text(pattern.description)
     }
 }
 

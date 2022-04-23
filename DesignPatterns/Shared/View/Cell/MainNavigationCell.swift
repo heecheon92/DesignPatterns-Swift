@@ -20,6 +20,7 @@ struct MainNavigationCell: View {
                 .font(.system(size: 25))
                 .fontWeight(.bold)
                 .padding()
+            
             Spacer()
 
             Text(cellDescription)

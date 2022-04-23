@@ -7,9 +7,32 @@
 
 import SwiftUI
 
-struct BehavioralPatternsView: View {
+struct BehavioralPatternsView: PatternView {
+    
+    typealias Pattern = AnyBehavioralPattern
+    
+    var viewList: Array<Pattern> = [
+        Pattern(_ChainOfResponsibility()),
+        Pattern(_Command()),
+        Pattern(_Interpreter()),
+        Pattern(_Iterator()),
+        Pattern(_Mediator()),
+        Pattern(_Memento()),
+        Pattern(_Observer()),
+        Pattern(_State()),
+        Pattern(_Strategy()),
+        Pattern(_TemplateMethod()),
+        Pattern(_Visitor()),
+    ]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List(viewList) { bh in
+            ListingCell(pattern: bh)
+        }
+    }
+    
+    func ListingCell(pattern: AnyBehavioralPattern) -> some View {
+        return Text(pattern.description)
     }
 }
 

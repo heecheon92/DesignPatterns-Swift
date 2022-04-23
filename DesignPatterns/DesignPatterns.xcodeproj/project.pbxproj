@@ -10,6 +10,9 @@
 		4B5A3FA727B00282006FFF2D /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5A3FA627B00282006FFF2D /* CodeView.swift */; };
 		4B5A3FA827B00282006FFF2D /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5A3FA627B00282006FFF2D /* CodeView.swift */; };
 		4B5A3FAB27B002C3006FFF2D /* CodeViewer in Frameworks */ = {isa = PBXBuildFile; productRef = 4B5A3FAA27B002C3006FFF2D /* CodeViewer */; };
+		4B8210072813B9B500A7B9FA /* BehavioralPatterns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8210062813B9B500A7B9FA /* BehavioralPatterns.swift */; };
+		4B8210092813C84600A7B9FA /* CreationalPatterns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8210082813C84600A7B9FA /* CreationalPatterns.swift */; };
+		4B82100B2813CC9C00A7B9FA /* StructuralPatterns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B82100A2813CC9C00A7B9FA /* StructuralPatterns.swift */; };
 		4BBB180727ADEFD600914D47 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBB180627ADEFD600914D47 /* Tests_iOS.swift */; };
 		4BBB180927ADEFD600914D47 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBB180827ADEFD600914D47 /* Tests_iOSLaunchTests.swift */; };
 		4BBB181327ADEFD600914D47 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBB181227ADEFD600914D47 /* Tests_macOS.swift */; };
@@ -72,6 +75,9 @@
 
 /* Begin PBXFileReference section */
 		4B5A3FA627B00282006FFF2D /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
+		4B8210062813B9B500A7B9FA /* BehavioralPatterns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BehavioralPatterns.swift; sourceTree = "<group>"; };
+		4B8210082813C84600A7B9FA /* CreationalPatterns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationalPatterns.swift; sourceTree = "<group>"; };
+		4B82100A2813CC9C00A7B9FA /* StructuralPatterns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructuralPatterns.swift; sourceTree = "<group>"; };
 		4BBB17EE27ADEFD400914D47 /* DesignPatternsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignPatternsApp.swift; sourceTree = "<group>"; };
 		4BBB17EF27ADEFD400914D47 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4BBB17F027ADEFD600914D47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -240,6 +246,7 @@
 		4BBB182E27ADF0BD00914D47 /* Creational */ = {
 			isa = PBXGroup;
 			children = (
+				4B8210082813C84600A7B9FA /* CreationalPatterns.swift */,
 			);
 			path = Creational;
 			sourceTree = "<group>";
@@ -247,6 +254,7 @@
 		4BBB182F27ADF0C500914D47 /* Structural */ = {
 			isa = PBXGroup;
 			children = (
+				4B82100A2813CC9C00A7B9FA /* StructuralPatterns.swift */,
 			);
 			path = Structural;
 			sourceTree = "<group>";
@@ -254,6 +262,7 @@
 		4BBB183027ADF0CF00914D47 /* Behavioral */ = {
 			isa = PBXGroup;
 			children = (
+				4B8210062813B9B500A7B9FA /* BehavioralPatterns.swift */,
 			);
 			path = Behavioral;
 			sourceTree = "<group>";
@@ -498,6 +507,7 @@
 				4BD6EB5027B9D82500F0E6D0 /* CommonExtension.swift in Sources */,
 				4BD6EB6527BA118C00F0E6D0 /* eDesignPattern.swift in Sources */,
 				4B5A3FA727B00282006FFF2D /* CodeView.swift in Sources */,
+				4B8210072813B9B500A7B9FA /* BehavioralPatterns.swift in Sources */,
 				4BBB184127AE249000914D47 /* CollectDict.swift in Sources */,
 				4BBB182C27ADF01D00914D47 /* IDesignPattern.swift in Sources */,
 				4BD6EB5527B9DC5C00F0E6D0 /* BehavioralPatternsView.swift in Sources */,
@@ -509,7 +519,9 @@
 				4BD6EB5227B9DC3A00F0E6D0 /* StructuralPatternsView.swift in Sources */,
 				4BBB181827ADEFD600914D47 /* ContentView.swift in Sources */,
 				4BBB184427AE24D100914D47 /* Line.swift in Sources */,
+				4B82100B2813CC9C00A7B9FA /* StructuralPatterns.swift in Sources */,
 				4BBB181627ADEFD600914D47 /* DesignPatternsApp.swift in Sources */,
+				4B8210092813C84600A7B9FA /* CreationalPatterns.swift in Sources */,
 				4BBB183727ADF4A000914D47 /* TreeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

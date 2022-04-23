@@ -7,7 +7,7 @@
 
 import Foundation
 
-public protocol DesignPattern {}
+public protocol DesignPattern : CustomStringConvertible, Identifiable {}
 
 public protocol CreationalPattern: DesignPattern {}
 public protocol StructuralPattern: DesignPattern {}
