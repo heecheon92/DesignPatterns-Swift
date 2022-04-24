@@ -13,6 +13,10 @@
 		4B8210072813B9B500A7B9FA /* BehavioralPatterns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8210062813B9B500A7B9FA /* BehavioralPatterns.swift */; };
 		4B8210092813C84600A7B9FA /* CreationalPatterns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8210082813C84600A7B9FA /* CreationalPatterns.swift */; };
 		4B82100B2813CC9C00A7B9FA /* StructuralPatterns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B82100A2813CC9C00A7B9FA /* StructuralPatterns.swift */; };
+		4B82100F2815308200A7B9FA /* ExplanationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B82100E2815308200A7B9FA /* ExplanationView.swift */; };
+		4B821011281532E500A7B9FA /* CommonProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B821010281532E500A7B9FA /* CommonProtocols.swift */; };
+		4B8210162815337000A7B9FA /* StrategyPatternView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8210152815337000A7B9FA /* StrategyPatternView.swift */; };
+		4B82101B281533C000A7B9FA /* StrategyPatternViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B82101A281533C000A7B9FA /* StrategyPatternViewModel.swift */; };
 		4BBB180727ADEFD600914D47 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBB180627ADEFD600914D47 /* Tests_iOS.swift */; };
 		4BBB180927ADEFD600914D47 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBB180827ADEFD600914D47 /* Tests_iOSLaunchTests.swift */; };
 		4BBB181327ADEFD600914D47 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBB181227ADEFD600914D47 /* Tests_macOS.swift */; };
@@ -78,6 +82,10 @@
 		4B8210062813B9B500A7B9FA /* BehavioralPatterns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BehavioralPatterns.swift; sourceTree = "<group>"; };
 		4B8210082813C84600A7B9FA /* CreationalPatterns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationalPatterns.swift; sourceTree = "<group>"; };
 		4B82100A2813CC9C00A7B9FA /* StructuralPatterns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructuralPatterns.swift; sourceTree = "<group>"; };
+		4B82100E2815308200A7B9FA /* ExplanationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplanationView.swift; sourceTree = "<group>"; };
+		4B821010281532E500A7B9FA /* CommonProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonProtocols.swift; sourceTree = "<group>"; };
+		4B8210152815337000A7B9FA /* StrategyPatternView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrategyPatternView.swift; sourceTree = "<group>"; };
+		4B82101A281533C000A7B9FA /* StrategyPatternViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrategyPatternViewModel.swift; sourceTree = "<group>"; };
 		4BBB17EE27ADEFD400914D47 /* DesignPatternsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignPatternsApp.swift; sourceTree = "<group>"; };
 		4BBB17EF27ADEFD400914D47 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4BBB17F027ADEFD600914D47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -146,12 +154,13 @@
 		4B5A3FA527B00271006FFF2D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4B8210142815334400A7B9FA /* Creational */,
+				4B8210132815333E00A7B9FA /* Structural */,
+				4B8210122815333600A7B9FA /* Behavioral */,
 				4BD6EB6727BA136B00F0E6D0 /* Cell */,
 				4B5A3FA627B00282006FFF2D /* CodeView.swift */,
-				4BD6EB5127B9DC3A00F0E6D0 /* StructuralPatternsView.swift */,
-				4BD6EB5427B9DC5C00F0E6D0 /* BehavioralPatternsView.swift */,
-				4BD6EB5727B9DC6900F0E6D0 /* CreationalPatternsView.swift */,
 				4BD6EB6F27BA22F600F0E6D0 /* MainView.swift */,
+				4B82100E2815308200A7B9FA /* ExplanationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -161,6 +170,53 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B8210122815333600A7B9FA /* Behavioral */ = {
+			isa = PBXGroup;
+			children = (
+				4BD6EB5427B9DC5C00F0E6D0 /* BehavioralPatternsView.swift */,
+				4B8210152815337000A7B9FA /* StrategyPatternView.swift */,
+			);
+			path = Behavioral;
+			sourceTree = "<group>";
+		};
+		4B8210132815333E00A7B9FA /* Structural */ = {
+			isa = PBXGroup;
+			children = (
+				4BD6EB5127B9DC3A00F0E6D0 /* StructuralPatternsView.swift */,
+			);
+			path = Structural;
+			sourceTree = "<group>";
+		};
+		4B8210142815334400A7B9FA /* Creational */ = {
+			isa = PBXGroup;
+			children = (
+				4BD6EB5727B9DC6900F0E6D0 /* CreationalPatternsView.swift */,
+			);
+			path = Creational;
+			sourceTree = "<group>";
+		};
+		4B8210172815339800A7B9FA /* Creational */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Creational;
+			sourceTree = "<group>";
+		};
+		4B8210182815339F00A7B9FA /* Behavioral */ = {
+			isa = PBXGroup;
+			children = (
+				4B82101A281533C000A7B9FA /* StrategyPatternViewModel.swift */,
+			);
+			path = Behavioral;
+			sourceTree = "<group>";
+		};
+		4B821019281533A500A7B9FA /* Structural */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Structural;
 			sourceTree = "<group>";
 		};
 		4BBB17E827ADEFD400914D47 = {
@@ -187,7 +243,7 @@
 				4BBB183F27AE247C00914D47 /* PreferenceKeys */,
 				4BBB183527ADF48300914D47 /* Diagram */,
 				4BBB183127ADF37800914D47 /* ADT */,
-				4BBB182A27ADEFF900914D47 /* DesignPatterns */,
+				4BBB182A27ADEFF900914D47 /* Protocols */,
 				4BBB17EE27ADEFD400914D47 /* DesignPatternsApp.swift */,
 				4BBB17EF27ADEFD400914D47 /* ContentView.swift */,
 				4BBB17F027ADEFD600914D47 /* Assets.xcassets */,
@@ -232,15 +288,16 @@
 			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
-		4BBB182A27ADEFF900914D47 /* DesignPatterns */ = {
+		4BBB182A27ADEFF900914D47 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
 				4BBB183027ADF0CF00914D47 /* Behavioral */,
 				4BBB182F27ADF0C500914D47 /* Structural */,
 				4BBB182E27ADF0BD00914D47 /* Creational */,
 				4BBB182B27ADF01D00914D47 /* IDesignPattern.swift */,
+				4B821010281532E500A7B9FA /* CommonProtocols.swift */,
 			);
-			path = DesignPatterns;
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		4BBB182E27ADF0BD00914D47 /* Creational */ = {
@@ -328,6 +385,9 @@
 		4BD6EB6B27BA173B00F0E6D0 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				4B821019281533A500A7B9FA /* Structural */,
+				4B8210182815339F00A7B9FA /* Behavioral */,
+				4B8210172815339800A7B9FA /* Creational */,
 				4BD6EB6C27BA175000F0E6D0 /* InitialDataFetcher.swift */,
 			);
 			path = ViewModel;
@@ -502,6 +562,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B8210162815337000A7B9FA /* StrategyPatternView.swift in Sources */,
 				4BD6EB5827B9DC6900F0E6D0 /* CreationalPatternsView.swift in Sources */,
 				4BD6EB7027BA22F600F0E6D0 /* MainView.swift in Sources */,
 				4BD6EB5027B9D82500F0E6D0 /* CommonExtension.swift in Sources */,
@@ -511,6 +572,8 @@
 				4BBB184127AE249000914D47 /* CollectDict.swift in Sources */,
 				4BBB182C27ADF01D00914D47 /* IDesignPattern.swift in Sources */,
 				4BD6EB5527B9DC5C00F0E6D0 /* BehavioralPatternsView.swift in Sources */,
+				4B82101B281533C000A7B9FA /* StrategyPatternViewModel.swift in Sources */,
+				4B821011281532E500A7B9FA /* CommonProtocols.swift in Sources */,
 				4BBB183327ADF38B00914D47 /* Tree.swift in Sources */,
 				4BD6EB6927BA137C00F0E6D0 /* MainNavigationCell.swift in Sources */,
 				4BD6EB5B27B9DF0C00F0E6D0 /* SizePreferenceKey.swift in Sources */,
@@ -522,6 +585,7 @@
 				4B82100B2813CC9C00A7B9FA /* StructuralPatterns.swift in Sources */,
 				4BBB181627ADEFD600914D47 /* DesignPatternsApp.swift in Sources */,
 				4B8210092813C84600A7B9FA /* CreationalPatterns.swift in Sources */,
+				4B82100F2815308200A7B9FA /* ExplanationView.swift in Sources */,
 				4BBB183727ADF4A000914D47 /* TreeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

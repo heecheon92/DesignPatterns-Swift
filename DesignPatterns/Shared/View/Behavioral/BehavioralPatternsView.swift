@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct BehavioralPatternsView: PatternView {
+
+    @State var pressedPattern : Pattern? = nil
     
     typealias Pattern = AnyBehavioralPattern
     
@@ -26,13 +28,19 @@ struct BehavioralPatternsView: PatternView {
     ]
     
     var body: some View {
-        List(viewList) { bh in
-            ListingCell(pattern: bh)
+        VStack {
+            List(viewList) { bh in
+                Text(bh.description)
+                   .onTapGesture {
+                       pressedPattern = bh
+                   }
+
+            }
         }
-    }
-    
-    func ListingCell(pattern: AnyBehavioralPattern) -> some View {
-        return Text(pattern.description)
+        .fullScreenCover(item: $pressedPattern, onDismiss: nil) { pattern in
+            ExplanationView(pattern: AnyDesignPattern(pattern))
+        }
+
     }
 }
 

@@ -20,37 +20,37 @@ public struct AnyStructuralPattern: StructuralPattern {
 
 
 public struct _Adapter: StructuralPattern {
-    public var description: String
+    public var description: String = "Adapter"
     
     public var id: UUID = UUID()
 }
 public struct _Bridge: StructuralPattern {
-    public var description: String
+    public var description: String = "Bridge"
     
     public var id: UUID = UUID()
 }
 public struct _Composite: StructuralPattern {
-    public var description: String
+    public var description: String = "Composite"
     
     public var id: UUID = UUID()
 }
 public struct _Decorator: StructuralPattern {
-    public var description: String
+    public var description: String = "Decorator"
     
     public var id: UUID = UUID()
 }
 public struct _Facade: StructuralPattern {
-    public var description: String
+    public var description: String = "Facade"
     
     public var id: UUID = UUID()
 }
 public struct _Flyweight: StructuralPattern {
-    public var description: String
+    public var description: String = "Flyweight"
     
     public var id: UUID = UUID()
 }
 public struct _Proxy: StructuralPattern{
-    public var description: String
+    public var description: String = "Proxy"
     
     public var id: UUID = UUID()
 }

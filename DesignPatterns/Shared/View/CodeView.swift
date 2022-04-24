@@ -9,9 +9,7 @@ import SwiftUI
 import CodeViewer
 
 struct CodeView: View {
-    @State private var json = """
-        public class HelloWorld : Identifiable {}
-        """
+    @Binding public var json : String
     
     var body: some View {
         VStack {
@@ -34,6 +32,6 @@ struct CodeView: View {
 
 struct CodeView_Previews: PreviewProvider {
     static var previews: some View {
-        CodeView()
+        CodeView(json: .constant(""))
     }
 }

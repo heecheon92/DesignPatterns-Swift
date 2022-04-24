@@ -7,15 +7,6 @@
 
 import SwiftUI
 
-
-public protocol PatternView : View {
-    associatedtype Pattern
-    associatedtype V: View
-    var viewList: [Pattern] { get }
-    
-    func ListingCell(pattern: Pattern) -> V
-}
-
 struct MainView: View {
     
     @ObservedObject var initialFetcher: InitialDataFetcher
@@ -29,7 +20,7 @@ struct MainView: View {
                                        cellDescription: initialFetcher.getBehavioralPattern.description)
                         .padding()
                 }
-                NavigationLink(destination: EmptyView()) {
+                NavigationLink(destination: StructuralPatternsView()) {
                     MainNavigationCell(cellTitle: initialFetcher.getStructurualPattern.name,
                                        cellBgColor: .pastelPink,
                                        cellDescription: initialFetcher.getStructurualPattern.description)

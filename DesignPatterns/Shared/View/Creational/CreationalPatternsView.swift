@@ -9,6 +9,8 @@ import SwiftUI
 
 struct CreationalPatternsView: PatternView {
     
+    @State var pressedPattern : Pattern? = nil
+    
     typealias Pattern = AnyCreationalPattern
     
     var viewList: Array<Pattern> = [
@@ -20,13 +22,18 @@ struct CreationalPatternsView: PatternView {
     ]
     
     var body: some View {
-        List(viewList) { cr in
-            ListingCell(pattern: cr)
+        VStack {
+            List(viewList) { bh in
+                Text(bh.description)
+                   .onTapGesture {
+                       pressedPattern = bh
+                   }
+
+            }
         }
-    }
-    
-    func ListingCell(pattern: AnyCreationalPattern) -> some View {
-        return Text(pattern.description)
+        .fullScreenCover(item: $pressedPattern, onDismiss: nil) { pattern in
+            ExplanationView(pattern: AnyDesignPattern(pattern))
+        }
     }
 }
 
