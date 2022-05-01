@@ -24,3 +24,25 @@ extension Color {
         )
     }
 }
+
+extension View {
+    
+    public var rect : CGRect {
+        return UIScreen.main.bounds
+    }
+    
+    public var safeArea : UIEdgeInsets {
+        guard let screen =
+                UIApplication.shared.connectedScenes.first as?
+                UIWindowScene else {
+                    return .zero
+                }
+        
+        guard let safeArea = screen.windows.first?.safeAreaInsets
+        else {
+            return .zero
+        }
+        
+        return safeArea
+    }
+}

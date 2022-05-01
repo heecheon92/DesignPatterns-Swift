@@ -10,6 +10,9 @@ import WikipediaKit
 
 struct ContentView: View {
     @StateObject var initialFetcher = InitialDataFetcher()
+    
+    @State var splashEndAnimation : Bool = false
+    
     @State var tree = Tree<Int>(name: "root", value: 50, children: [
         Tree(name: "child", value: 17, children: [
             Tree(name: "leaf", value: 12),
@@ -23,16 +26,33 @@ struct ContentView: View {
 
     var body: some View {
         
-        if (initialFetcher.patternInfoList.count == 3) {
-            MainView(initialFetcher: initialFetcher)
-        } else {
-            Text("Fetching Initial Data")
+        ZStack {
+            
+            if (initialFetcher.patternInfoList.count == 3) {
+                MainView(initialFetcher: initialFetcher)
+                    .offset(y: splashEndAnimation ? 0 : rect.height)
+            }
+            
+            SplashScreen(endAnimation: $splashEndAnimation)
                 .task {
                     await initialFetcher.fetchFromWiki(pattern: .Creational)
                     await initialFetcher.fetchFromWiki(pattern: .Structural)
                     await initialFetcher.fetchFromWiki(pattern: .Behavioral)
                 }
+            
         }
+        .onChange(of: initialFetcher.patternInfoList) { _ in
+            if (initialFetcher.patternInfoList.count > 2) {
+                withAnimation(.interactiveSpring(response: 0.7,
+                                                 dampingFraction: 1.05,
+                                                 blendDuration: 1.05)) {
+                    splashEndAnimation.toggle()
+                }
+                
+            }
+        }
+        
+
         
         
 //        TreeView(tree: tree, node: { node in

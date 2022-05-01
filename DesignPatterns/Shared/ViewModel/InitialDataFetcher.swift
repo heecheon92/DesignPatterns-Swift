@@ -48,7 +48,7 @@ public class InitialDataFetcher : ObservableObject {
     }
 }
 
-public struct BasicPatternInfo : Identifiable {
+public struct BasicPatternInfo : Identifiable, Equatable {
     public var id = UUID()
     
     var name: String

@@ -15,12 +15,17 @@ struct ExplanationView: View {
     var body : some View {
         VStack {
             Text(pattern.description)
+                .font(.system(size: 24))
+                .fontWeight(.bold)
+                .padding()
             
             if (pattern.description == "Strategy") {
                 StrategyPatternView()
                     .frame(height: UIScreen.main.bounds.height * 0.3)
             }
+            Spacer()
         }
+        .ignoresSafeArea(.keyboard, edges: .bottom)
         .onTapGesture {
             presentationMode.wrappedValue.dismiss()
         }
