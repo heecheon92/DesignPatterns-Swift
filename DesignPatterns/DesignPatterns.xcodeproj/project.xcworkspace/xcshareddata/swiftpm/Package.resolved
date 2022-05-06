@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CodeViewer",
+        "repositoryURL": "https://github.com/dwarvesf/CodeViewer",
+        "state": {
+          "branch": "main",
+          "revision": "44bd04af81046ce65a4e38dc97a9dd3d387f069e",
+          "version": null
+        }
+      },
+      {
+        "package": "WikipediaKit",
+        "repositoryURL": "https://github.com/Raureif/WikipediaKit.git",
+        "state": {
+          "branch": null,
+          "revision": "e8627b5389334ac90698cf182a6d9610338a9397",
+          "version": "2.0.7"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

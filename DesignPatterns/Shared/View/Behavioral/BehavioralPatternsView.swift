@@ -6,11 +6,12 @@
 //
 
 import SwiftUI
+import Network
 
 struct BehavioralPatternsView: PatternView {
 
     @State var pressedPattern : Pattern? = nil
-    
+    let listTitle : String
     typealias Pattern = AnyBehavioralPattern
     
     var viewList: Array<Pattern> = [
@@ -29,12 +30,15 @@ struct BehavioralPatternsView: PatternView {
     
     var body: some View {
         VStack {
-            List(viewList) { bh in
-                Text(bh.description)
-                   .onTapGesture {
-                       pressedPattern = bh
-                   }
-
+            List {
+                Section(listTitle) {
+                    ForEach(viewList) { bh in
+                        Text(bh.description)
+                           .onTapGesture {
+                               pressedPattern = bh
+                           }
+                    }
+                }
             }
         }
         .fullScreenCover(item: $pressedPattern, onDismiss: nil) { pattern in
@@ -46,6 +50,6 @@ struct BehavioralPatternsView: PatternView {
 
 struct BehavioralPatternsView_Previews: PreviewProvider {
     static var previews: some View {
-        BehavioralPatternsView()
+        BehavioralPatternsView(listTitle: "Behavioral Pattern")
     }
 }

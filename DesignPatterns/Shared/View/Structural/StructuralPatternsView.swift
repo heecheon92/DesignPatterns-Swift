@@ -10,7 +10,7 @@ import SwiftUI
 struct StructuralPatternsView: PatternView {
     
     @State var pressedPattern : Pattern? = nil
-    
+    let listTitle : String
     typealias Pattern = AnyStructuralPattern
     
     var viewList: [AnyStructuralPattern] = [
@@ -25,12 +25,15 @@ struct StructuralPatternsView: PatternView {
     
     var body: some View {
         VStack {
-            List(viewList) { bh in
-                Text(bh.description)
-                   .onTapGesture {
-                       pressedPattern = bh
-                   }
-
+            List {
+                Section(listTitle) {
+                    ForEach(viewList) { bh in
+                        Text(bh.description)
+                           .onTapGesture {
+                               pressedPattern = bh
+                           }
+                    }
+                }
             }
         }
         .fullScreenCover(item: $pressedPattern, onDismiss: nil) { pattern in
@@ -41,6 +44,6 @@ struct StructuralPatternsView: PatternView {
 
 struct StructuralPatternsView_Previews: PreviewProvider {
     static var previews: some View {
-        StructuralPatternsView()
+        StructuralPatternsView(listTitle: "Structural Pattern")
     }
 }

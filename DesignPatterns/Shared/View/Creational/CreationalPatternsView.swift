@@ -10,7 +10,7 @@ import SwiftUI
 struct CreationalPatternsView: PatternView {
     
     @State var pressedPattern : Pattern? = nil
-    
+    let listTitle : String
     typealias Pattern = AnyCreationalPattern
     
     var viewList: Array<Pattern> = [
@@ -23,12 +23,15 @@ struct CreationalPatternsView: PatternView {
     
     var body: some View {
         VStack {
-            List(viewList) { bh in
-                Text(bh.description)
-                   .onTapGesture {
-                       pressedPattern = bh
-                   }
-
+            List {
+                Section(listTitle) {
+                    ForEach(viewList) { bh in
+                        Text(bh.description)
+                           .onTapGesture {
+                               pressedPattern = bh
+                           }
+                    }
+                }
             }
         }
         .fullScreenCover(item: $pressedPattern, onDismiss: nil) { pattern in
@@ -39,6 +42,6 @@ struct CreationalPatternsView: PatternView {
 
 struct CreationalPatternsView_Previews: PreviewProvider {
     static var previews: some View {
-        CreationalPatternsView()
+        CreationalPatternsView(listTitle: "Creational Pattern")
     }
 }
