@@ -12,6 +12,7 @@
 		4B5A3FAB27B002C3006FFF2D /* CodeViewer in Frameworks */ = {isa = PBXBuildFile; productRef = 4B5A3FAA27B002C3006FFF2D /* CodeViewer */; };
 		4B658EDA281E26510093AEAF /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B658ED9281E26510093AEAF /* SplashScreen.swift */; };
 		4B658EDC281E35980093AEAF /* SplashShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B658EDB281E35980093AEAF /* SplashShape.swift */; };
+		4B658EDF2824C1B40093AEAF /* NetworkStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B658EDE2824C1B40093AEAF /* NetworkStatus.swift */; };
 		4B8210072813B9B500A7B9FA /* BehavioralPatterns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8210062813B9B500A7B9FA /* BehavioralPatterns.swift */; };
 		4B8210092813C84600A7B9FA /* CreationalPatterns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8210082813C84600A7B9FA /* CreationalPatterns.swift */; };
 		4B82100B2813CC9C00A7B9FA /* StructuralPatterns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B82100A2813CC9C00A7B9FA /* StructuralPatterns.swift */; };
@@ -84,6 +85,7 @@
 		4B658ED9281E26510093AEAF /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		4B658EDB281E35980093AEAF /* SplashShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashShape.swift; sourceTree = "<group>"; };
 		4B658EDD281E363D0093AEAF /* DesignPatterns--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "DesignPatterns--iOS--Info.plist"; sourceTree = "<group>"; };
+		4B658EDE2824C1B40093AEAF /* NetworkStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStatus.swift; sourceTree = "<group>"; };
 		4B8210062813B9B500A7B9FA /* BehavioralPatterns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BehavioralPatterns.swift; sourceTree = "<group>"; };
 		4B8210082813C84600A7B9FA /* CreationalPatterns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationalPatterns.swift; sourceTree = "<group>"; };
 		4B82100A2813CC9C00A7B9FA /* StructuralPatterns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructuralPatterns.swift; sourceTree = "<group>"; };
@@ -397,6 +399,7 @@
 				4B8210182815339F00A7B9FA /* Behavioral */,
 				4B8210172815339800A7B9FA /* Creational */,
 				4BD6EB6C27BA175000F0E6D0 /* InitialDataFetcher.swift */,
+				4B658EDE2824C1B40093AEAF /* NetworkStatus.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -590,6 +593,7 @@
 				4BD6EB6D27BA175000F0E6D0 /* InitialDataFetcher.swift in Sources */,
 				4BD6EB5227B9DC3A00F0E6D0 /* StructuralPatternsView.swift in Sources */,
 				4BBB181827ADEFD600914D47 /* ContentView.swift in Sources */,
+				4B658EDF2824C1B40093AEAF /* NetworkStatus.swift in Sources */,
 				4BBB184427AE24D100914D47 /* Line.swift in Sources */,
 				4B658EDA281E26510093AEAF /* SplashScreen.swift in Sources */,
 				4B82100B2813CC9C00A7B9FA /* StructuralPatterns.swift in Sources */,

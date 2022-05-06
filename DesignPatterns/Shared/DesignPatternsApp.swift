@@ -9,6 +9,13 @@ import SwiftUI
 
 @main
 struct DesignPatternsApp: App {
+    
+    internal var networkMonitor = Network.shared
+    
+    init() {
+        networkMonitor.updateNetworkStatus()
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
